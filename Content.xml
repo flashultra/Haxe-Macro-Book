@@ -3,7 +3,7 @@
 <?asciidoc-numbered?>
 <book xmlns="http://docbook.org/ns/docbook" xmlns:xl="http://www.w3.org/1999/xlink" version="5.0" xml:lang="en">
 <info>
-<title>Haxe 実践マクロ</title>
+<title>Haxe Practice Macro</title>
 <date>2016-06-24</date>
 <author>
 <personname>
@@ -14,13 +14,13 @@
 </info>
 <chapter xml:id="_はじめに">
 <title>はじめに</title>
-<section xml:id="_この本は何">
-<title>この本は何？</title>
-<simpara>Haxeのマクロについての解説本です。マクロの実用例とTipsを紹介していきます。</simpara>
-<simpara><link xl:href="https://techbookfest.github.io/">技術書典</link>に出したかったのですが、落選したのでGithub上で公開しています。</simpara>
+<section xml:id="_Introduction">
+<title>what is this book for？</title>
+<simpara>Haxe -It is a commentary book about the macro of. I will introduce practical examples and tips of macros.</simpara>
+<simpara>I wanted to submit it to <link xl:href="https://techbookfest.github.io/">Techbook</link>but it was rejected, so I'm publishing it on Github.</simpara>
 </section>
-<section xml:id="_haxeとは">
-<title>Haxeとは</title>
+<section xml:id="_what_is_haxe">
+<title>What is Haxe ?</title>
 <simpara>Haxeは静的型付けのプログラミング言語です。特徴的なのはその出力ターゲットの豊富さで、以下の3種類のバイトコードと8種類ソースコードへコンパイルすることが可能です。</simpara>
 <itemizedlist>
 <listitem>
