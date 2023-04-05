@@ -486,26 +486,26 @@ Let's rewrite the previous ``twice`` using refication.
 }
 ```
 
-It's easier than the original code to express a block expression that repeats the given expression twice. Reification can be used in the form of ``macro expressions''. If you write Haxe code directly after ``macro``, it will return ``haxe.macro.Expr``. ``$`` is an escape symbol, and ``$expr`` specifies to use the expression stored in the ``expr`` variable at that position.
+It's easier than the original code to express a block expression that repeats the given expression twice. Reification can be used in the form of ``macro expressions``. If you write Haxe code directly after ``macro``, it will return ``haxe.macro.Expr``. ``$`` is an escape symbol, and ``$expr`` specifies to use the expression stored in the ``expr`` variable at that position.
 
 The following types of escapes are available.
 
 [format="csv",options="header"]
 |======
-,type,description
-Evaluate the contents of ``${}``, ``$e{}``, ``Expr\->Expr``, ``{}`` and expand to that position
-If you write ``$a{}``,``Array<Expr>\->Array<Expr> or Array<Expr>\->Expr``,``Array<Expr>`` in the expected position, Expand the value to its position. At the position where ``Expr`` is expected, it is converted into an array declaration expression and expanded.
-``$b{}``,``Array<Expr>\->Expr``, block expression.
-Generate identifier from ``$i{}``,``String\->Expr``,string.
-``$p{}``,``Array<String>\->Expr``,field access expression.
-``$v{}``,``Dynamic\->Expr``, generates a literal expression for that value. Works with primitive types, instances of enums, and arrays of them.
-``object.$name``,``String\->Expr``, field access.
-``var $name = 1;``,``String\->Expr``, variable declaration.
-``function $name () {}``,``String\->Expr``, function declaration.
-``{ $name : 1 }``,``String\->Expr``, object literal.
+,Type,Description
+``${}``、``$e{}``,``Expr\->Expr``,``{}``Evaluate the contents of and expand to that position
+``$a{}``,``Array<Expr>\->Array<Expr> または Array<Expr>\->Expr``,``Array<Expr>`` is written at the expected position, the value is expanded at that position. At the position where ``Expr`` is expected, it is converted into an array declaration expression and expanded.
+``$b{}``,``Array<Expr>\->Expr``,block type.
+``$i{}``,``String\->Expr``,Generate an identifier from a string.
+``$p{}``,``Array<String>\->Expr``,Field access expression.
+``$v{}``,``Dynamic\->Expr``,Generates a literal expression for that value. Works with primitive types, instances of enums, and arrays of them.
+``object.$name``,``String\->Expr``,field access.
+``var $name = 1;``,``String\->Expr``,Variable declaration.
+``function $name () {}``,``String\->Expr``,a function declaration.
+``{ $name : 1 }``,``String\->Expr``,Object literal.
 ``try e() catch($name:Dynamic) {}``,``String\->Expr``,try-catch
-``new $typePath()``,``TypePath\->Expr``, instantiation.
-A tag that takes ``@:pos(p)`` and ``Position`` as an argument, replace the position information of the expression with `p`.
+``new $typePath()``,``TypePath\->Expr``,instantiation.
+``@:pos(p)``,``Position``as an argument, replace the positional information of the expression with `p`.
 |======
 
 === Time measurement
