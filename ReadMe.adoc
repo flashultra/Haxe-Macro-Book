@@ -96,7 +96,7 @@ Macros and compilation are closely related, so it's good to first know how Haxe 
 
 Below is a simple diagram of the compilation process.
 
-image::resources/images/compile.png[Compile process]
+image::resources/images/compileEN.png[Compile process]
 
 When using macros, the process from source to typed AST works twice.
 
