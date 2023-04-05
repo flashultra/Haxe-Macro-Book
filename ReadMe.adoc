@@ -1,4 +1,23 @@
 = Haxe practice macro
+shohei909
+
+:firstname: shohei
+:authorinitials: shohei909
+:keywords: Haxe, Macro
+:description: An e-book that summarizes Haxe's macro practical use and tips
+:encoding: utf-8
+:lang: en
+:toc: left
+:toc-title: table of contents
+:toclevels: 4
+:figure-caption: figure
+:table-caption: table
+:pagenums:
+:sectnums:
+:imagesdir: resources/images/
+:lang: en
+:homepage: https://github.com/shohei909/Haxe-Macro-Book
+:source: https://github.com/shohei909/Haxe-Macro-Book
 
 == Introduction
 
@@ -96,7 +115,7 @@ Macros and compilation are closely related, so it's good to first know how Haxe 
 
 Below is a simple diagram of the compilation process.
 
-image::resources/images/compileEN.png[Compile process]
+image::compileEN.png[Compile process]
 
 When using macros, the process from source to typed AST works twice.
 
@@ -740,7 +759,7 @@ This is also done in the constant generation mentioned earlier.
 
 Documentation comments added in this way can be used not only for documentation generation, but also displayed on IDEs that use the compiler's completion function.
 
-image::/resources/images/completion.png[Completion with FlashDevelop]
+image::completion.png[Completion with FlashDevelop]
 
 
 ==== Tips: #if display
