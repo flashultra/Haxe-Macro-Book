@@ -152,20 +152,20 @@ class EmbeddingDate {
 
     #if macro
     public static function initialize():Void {
-        // 初期化マクロのエントリーポイント
+        // Initialization macro entry point
 
-        // 現在時刻を取得して文字列に
+        // Get the current time into a string
         var dateString = Date.now().toString();
 
-        // 文字列をリソースとして埋め込み
+        // Embed string as resource
         Context.addResource(DATE_RESOURCE_KEY, Bytes.ofString(dateString));
     }
     #end
 
     public static function main():Void {
-        // アプリの実行時のエントリーポイント
+        // Entry point when running the app
 
-        // リソースからビルド日時を取り出して出力
+        // Extract build date from resource and output
         trace(Resource.getString(DATE_RESOURCE_KEY));
     }
 }
