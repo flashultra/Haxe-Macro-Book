@@ -494,11 +494,11 @@ The following types of escapes are available.
 |======
 ,Type,Description
 ``${}``、``$e{}``,``Expr\->Expr``,``{}``Evaluate the contents of and expand to that position
-``$a{}``,``Array<Expr>\->Array<Expr> または Array<Expr>\->Expr``,``Array<Expr>`` is written at the expected position, the value is expanded at that position. At the position where ``Expr`` is expected, it is converted into an array declaration expression and expanded.
+``$a{}``,``Array<Expr>\->Array<Expr> or Array<Expr>\->Expr``,"``Array<Expr>`` is written at the expected position, the value is expanded at that position. At the position where ``Expr`` is expected, it is converted into an array declaration expression and expanded."
 ``$b{}``,``Array<Expr>\->Expr``,block type.
 ``$i{}``,``String\->Expr``,Generate an identifier from a string.
 ``$p{}``,``Array<String>\->Expr``,Field access expression.
-``$v{}``,``Dynamic\->Expr``,Generates a literal expression for that value. Works with primitive types, instances of enums, and arrays of them.
+``$v{}``,``Dynamic\->Expr``,"Generates a literal expression for that value. Works with primitive types, instances of enums, and arrays of them."
 ``object.$name``,``String\->Expr``,field access.
 ``var $name = 1;``,``String\->Expr``,Variable declaration.
 ``function $name () {}``,``String\->Expr``,a function declaration.
